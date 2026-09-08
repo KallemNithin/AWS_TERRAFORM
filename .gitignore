@@ -1,4 +1,14 @@
 .terraform/
 *.tfstate
+<<<<<<< HEAD
 *.tfvars
 *.tfplan
+=======
+*.tfstate.*
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+>>>>>>> b0eb67afbefa7fd69425f9bc0d330dc79e511e79
