@@ -12,7 +12,7 @@ resource "aws_instance" "web" {
 }
 
 resource "aws_eip" "web_eip" {
-  instance = aws_instance.web.id
+  instance = aws_instance.web.id    #CROSS RESOURCE ATTRIBUTE REFERENCE
   tags = {
     Name = "Web_EIP"
   }
