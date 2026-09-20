@@ -1,0 +1,246 @@
+2026-09-20T12:40:02.280Z [INFO]  Terraform version: 1.16.3
+2026-09-20T12:40:02.281Z [DEBUG] using github.com/hashicorp/go-tfe v1.110.0
+2026-09-20T12:40:02.281Z [DEBUG] using github.com/hashicorp/hcl/v2 v2.24.0
+2026-09-20T12:40:02.281Z [DEBUG] using github.com/hashicorp/terraform-svchost v0.2.1
+2026-09-20T12:40:02.281Z [DEBUG] using github.com/zclconf/go-cty v1.18.1
+2026-09-20T12:40:02.281Z [INFO]  Go runtime version: go1.26.8
+2026-09-20T12:40:02.282Z [INFO]  CLI args: []string{"/snap/terraform/938/terraform", "plan"}
+2026-09-20T12:40:02.282Z [DEBUG] Attempting to open CLI config file: /home/nithin_kallem/.terraformrc
+2026-09-20T12:40:02.282Z [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2026-09-20T12:40:02.283Z [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2026-09-20T12:40:02.283Z [DEBUG] ignoring non-existing provider search directory /home/nithin_kallem/.terraform.d/plugins
+2026-09-20T12:40:02.283Z [DEBUG] ignoring non-existing provider search directory /home/nithin_kallem/.local/share/terraform/plugins
+2026-09-20T12:40:02.283Z [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2026-09-20T12:40:02.283Z [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2026-09-20T12:40:02.283Z [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2026-09-20T12:40:02.285Z [INFO]  CLI command args: []string{"plan"}
+2026-09-20T12:40:09.445Z [DEBUG] checking for provisioner in "."
+2026-09-20T12:40:09.446Z [DEBUG] checking for provisioner in "/snap/terraform/938"
+2026-09-20T12:40:09.454Z [INFO]  backend/local: starting Plan operation
+2026-09-20T12:40:09.470Z [DEBUG] Starting graph walk: walkInit
+2026-09-20T12:40:09.480Z [DEBUG] created provider logger: level=debug
+2026-09-20T12:40:09.480Z [INFO]  provider: configuring client automatic mTLS
+2026-09-20T12:40:09.491Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/linux_amd64/terraform-provider-aws_v6.65.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/linux_amd64/terraform-provider-aws_v6.65.0_x5"]
+2026-09-20T12:40:09.498Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/linux_amd64/terraform-provider-aws_v6.65.0_x5 pid=205037
+2026-09-20T12:40:09.498Z [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/linux_amd64/terraform-provider-aws_v6.65.0_x5
+2026-09-20T12:40:10.504Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.65.0 (go1.26.6)...
+2026-09-20T12:40:10.505Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-09-20T12:40:10.505Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-09-20T12:40:10.753Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-09-20T12:40:10.754Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-09-20T12:40:10.765Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: configuring server automatic mTLS: timestamp=2026-09-20T12:40:10.765Z
+2026-09-20T12:40:10.785Z [DEBUG] provider: using plugin: version=5
+2026-09-20T12:40:10.785Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: plugin address: network=unix address=/tmp/plugin1587278468 timestamp=2026-09-20T12:40:10.785Z
+2026-09-20T12:40:13.731Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-09-20T12:40:13.767Z [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/linux_amd64/terraform-provider-aws_v6.65.0_x5 id=205037
+2026-09-20T12:40:13.767Z [DEBUG] provider: plugin exited
+2026-09-20T12:40:13.768Z [DEBUG] Building and walking validate graph
+2026-09-20T12:40:13.768Z [DEBUG] ProviderTransformer: "aws_instance.ubuntu_instance" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-09-20T12:40:13.769Z [DEBUG] ProviderTransformer: "data.aws_ami.ami_details" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-09-20T12:40:13.769Z [DEBUG] ReferenceTransformer: "aws_instance.ubuntu_instance" references: [data.aws_ami.ami_details]
+2026-09-20T12:40:13.769Z [DEBUG] ReferenceTransformer: "aws_instance.ubuntu_instance" references: data.aws_ami.ami_details
+2026-09-20T12:40:13.769Z [DEBUG] ReferenceTransformer: "data.aws_ami.ami_details" references: []
+2026-09-20T12:40:13.770Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2026-09-20T12:40:13.770Z [DEBUG] Starting graph walk: walkValidate
+2026-09-20T12:40:13.777Z [DEBUG] created provider logger: level=debug
+2026-09-20T12:40:13.778Z [INFO]  provider: configuring client automatic mTLS
+2026-09-20T12:40:13.782Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/linux_amd64/terraform-provider-aws_v6.65.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/linux_amd64/terraform-provider-aws_v6.65.0_x5"]
+2026-09-20T12:40:13.791Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/linux_amd64/terraform-provider-aws_v6.65.0_x5 pid=205069
+2026-09-20T12:40:13.791Z [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/linux_amd64/terraform-provider-aws_v6.65.0_x5
+2026-09-20T12:40:14.601Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.65.0 (go1.26.6)...
+2026-09-20T12:40:14.601Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-09-20T12:40:14.603Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-09-20T12:40:14.805Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-09-20T12:40:14.805Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-09-20T12:40:14.813Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: configuring server automatic mTLS: timestamp=2026-09-20T12:40:14.813Z
+2026-09-20T12:40:14.830Z [DEBUG] provider: using plugin: version=5
+2026-09-20T12:40:14.830Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: plugin address: address=/tmp/plugin3456480537 network=unix timestamp=2026-09-20T12:40:14.829Z
+2026-09-20T12:40:15.210Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-09-20T12:40:15.241Z [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/linux_amd64/terraform-provider-aws_v6.65.0_x5 id=205069
+2026-09-20T12:40:15.242Z [DEBUG] provider: plugin exited
+2026-09-20T12:40:15.242Z [INFO]  backend/local: plan calling Plan
+2026-09-20T12:40:15.242Z [DEBUG] Building and walking plan graph for NormalMode
+2026-09-20T12:40:15.243Z [DEBUG] ProviderTransformer: "aws_instance.ubuntu_instance (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-09-20T12:40:15.243Z [DEBUG] ProviderTransformer: "data.aws_ami.ami_details (expand)" (*terraform.nodeExpandPlannableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-09-20T12:40:15.243Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2026-09-20T12:40:15.244Z [DEBUG] ReferenceTransformer: "aws_instance.ubuntu_instance (expand)" references: [data.aws_ami.ami_details (expand)]
+2026-09-20T12:40:15.244Z [DEBUG] ReferenceTransformer: "aws_instance.ubuntu_instance (expand)" references: data.aws_ami.ami_details (expand)
+2026-09-20T12:40:15.244Z [DEBUG] ReferenceTransformer: "data.aws_ami.ami_details (expand)" references: []
+2026-09-20T12:40:15.244Z [DEBUG] Starting graph walk: walkPlan
+2026-09-20T12:40:15.251Z [DEBUG] created provider logger: level=debug
+2026-09-20T12:40:15.251Z [INFO]  provider: configuring client automatic mTLS
+2026-09-20T12:40:15.256Z [DEBUG] provider: starting plugin: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/linux_amd64/terraform-provider-aws_v6.65.0_x5 args=[".terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/linux_amd64/terraform-provider-aws_v6.65.0_x5"]
+2026-09-20T12:40:15.262Z [DEBUG] provider: plugin started: path=.terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/linux_amd64/terraform-provider-aws_v6.65.0_x5 pid=205093
+2026-09-20T12:40:15.263Z [DEBUG] provider: waiting for RPC address: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/linux_amd64/terraform-provider-aws_v6.65.0_x5
+2026-09-20T12:40:16.212Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Starting github.com/hashicorp/terraform-provider-aws@6.65.0 (go1.26.6)...
+2026-09-20T12:40:16.212Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Creating Terraform AWS Provider (SDKv2-style)...
+2026-09-20T12:40:16.213Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Initializing Terraform AWS Provider (SDKv2-style)...
+2026-09-20T12:40:16.428Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Creating Terraform AWS Provider (Framework-style)...
+2026-09-20T12:40:16.428Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Initializing Terraform AWS Provider (Framework-style)...
+2026-09-20T12:40:16.437Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: configuring server automatic mTLS: timestamp=2026-09-20T12:40:16.437Z
+2026-09-20T12:40:16.457Z [DEBUG] provider: using plugin: version=5
+2026-09-20T12:40:16.457Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: plugin address: address=/tmp/plugin3714336897 network=unix timestamp=2026-09-20T12:40:16.457Z
+2026-09-20T12:40:16.760Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Configuring Terraform AWS Provider: tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=b8ec5b11-56e4-6f14-616a-99f34d94b964 @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:150 @module=aws tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider timestamp=2026-09-20T12:40:16.757Z
+2026-09-20T12:40:16.764Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Resolving credentials provider: tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=b8ec5b11-56e4-6f14-616a-99f34d94b964 tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 @module=aws.aws-base timestamp=2026-09-20T12:40:16.764Z
+2026-09-20T12:40:16.766Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Loading configuration: tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 @module=aws.aws-base tf_req_id=b8ec5b11-56e4-6f14-616a-99f34d94b964 tf_rpc=ConfigureProvider timestamp=2026-09-20T12:40:16.765Z
+2026-09-20T12:40:16.772Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Retrieving credentials: @module=aws.aws-base tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=b8ec5b11-56e4-6f14-616a-99f34d94b964 timestamp=2026-09-20T12:40:16.771Z
+2026-09-20T12:40:16.774Z [INFO]  provider.terraform-provider-aws_v6.65.0_x5: Retrieved credentials: @module=aws.aws-base tf_aws.credentials_source="SharedConfigCredentials: /home/nithin_kallem/.aws/credentials" tf_mux_provider="*schema.GRPCProviderServer" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:39 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=b8ec5b11-56e4-6f14-616a-99f34d94b964 tf_rpc=ConfigureProvider timestamp=2026-09-20T12:40:16.773Z
+2026-09-20T12:40:16.774Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Loading configuration: tf_rpc=ConfigureProvider @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=b8ec5b11-56e4-6f14-616a-99f34d94b964 timestamp=2026-09-20T12:40:16.773Z
+2026-09-20T12:40:16.774Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Retrieving AWS account details: tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=b8ec5b11-56e4-6f14-616a-99f34d94b964 @module=aws tf_rpc=ConfigureProvider @caller=github.com/hashicorp/terraform-provider-aws/internal/conns/config.go:188 tf_mux_provider="*schema.GRPCProviderServer" timestamp=2026-09-20T12:40:16.774Z
+2026-09-20T12:40:16.776Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: Retrieving caller identity from STS: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=b8ec5b11-56e4-6f14-616a-99f34d94b964 tf_rpc=ConfigureProvider timestamp=2026-09-20T12:40:16.776Z
+2026-09-20T12:40:16.791Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: HTTP Request Sent: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47
+  http.request.body=
+  | Action=GetCallerIdentity&Version=2011-06-15
+   http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.16.3 (+https://www.terraform.io) terraform-provider-aws/6.65.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.0 ua/2.1 os/linux lang/go#1.26.6 md/GOOS#linux md/GOARCH#amd64 api/sts#1.50.0 m/n" net.peer.name=sts.us-east-1.amazonaws.com tf_aws.sdk=aws-sdk-go-v2 tf_req_id=b8ec5b11-56e4-6f14-616a-99f34d94b964 http.request.header.amz_sdk_invocation_id=19c18baa-22a5-4277-ae09-633ce7096b27 http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************HAG5/20260920/us-east-1/sts/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request.header.content_type=application/x-www-form-urlencoded http.request.header.x_amz_date=20260920T124016Z rpc.method=STS/GetCallerIdentity aws.region=us-east-1 http.method=POST http.request_content_length=43 rpc.system.name=aws-api tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" @module=aws.aws-base http.request.header.amz_sdk_request="attempt=1; max=25" http.url=https://sts.us-east-1.amazonaws.com/ tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider timestamp=2026-09-20T12:40:16.791Z
+2026-09-20T12:40:17.774Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: HTTP Response Received: http.status_code=200 rpc.method=STS/GetCallerIdentity tf_aws.sdk=aws-sdk-go-v2 http.response.header.date="Sun, 20 Sep 2026 12:40:17 GMT" tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=b8ec5b11-56e4-6f14-616a-99f34d94b964 tf_rpc=ConfigureProvider aws.region=us-east-1 http.response.header.x_amz_sts_extended_request_id=MTp1cy1lYXN0LTE6UzoxNzg5OTA4MDE3NzczOlI6Nko5SU84NjU= rpc.system.name=aws-api @module=aws.aws-base
+  http.response.body=
+  | <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  |   <GetCallerIdentityResult>
+  |     <Arn>arn:aws:iam::020651500156:root</Arn>
+  |     <UserId>020651500156</UserId>
+  |     <Account>020651500156</Account>
+  |   </GetCallerIdentityResult>
+  |   <ResponseMetadata>
+  |     <RequestId>e1ff5989-5312-4e94-81f5-dc0f9356a190</RequestId>
+  |   </ResponseMetadata>
+  | </GetCallerIdentityResponse>
+   http.response_content_length=387 @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:47 http.duration=981 http.response.header.content_type=text/xml http.response.header.x_amzn_requestid=e1ff5989-5312-4e94-81f5-dc0f9356a190 timestamp=2026-09-20T12:40:17.773Z
+2026-09-20T12:40:17.778Z [INFO]  provider.terraform-provider-aws_v6.65.0_x5: Retrieved caller identity from STS: tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=b8ec5b11-56e4-6f14-616a-99f34d94b964 @module=aws.aws-base tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:39 timestamp=2026-09-20T12:40:17.777Z
+2026-09-20T12:40:17.781Z [DEBUG] No policy client configured, skipping policy evaluation for provider["registry.terraform.io/hashicorp/aws"]
+2026-09-20T12:40:17.783Z [DEBUG] Resource instance state not found for node "data.aws_ami.ami_details", instance data.aws_ami.ami_details
+2026-09-20T12:40:17.946Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: HTTP Request Sent: @module=aws http.request.header.amz_sdk_invocation_id=77264939-a8ab-47ad-b423-49bbbbaf65cf http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************HAG5/20260920/us-east-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request.header.x_amz_date=20260920T124017Z rpc.method=EC2/DescribeImages tf_aws.signing_region="" tf_mux_provider="*schema.GRPCProviderServer" http.method=POST
+  http.request.body=
+  | Action=DescribeImages&Filter.1.Name=name&Filter.1.Value.1=ubuntu%2Fimages%2Fhvm-ssd-gp3%2Fubuntu-resolute-26.04-amd64-server-%2A&IncludeDeprecated=false&Owner.1=099720109477&Version=2016-11-15
+   http.request.header.amz_sdk_request="attempt=1; max=25" rpc.system.name=aws-api tf_rpc=ReadDataSource @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.request.header.content_type=application/x-www-form-urlencoded http.request_content_length=192 http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.16.3 (+https://www.terraform.io) terraform-provider-aws/6.65.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.0 ua/2.1 os/linux lang/go#1.26.6 md/GOOS#linux md/GOARCH#amd64 api/ec2#1.332.0 m/C,n" net.peer.name=ec2.us-east-1.amazonaws.com tf_aws.sdk=aws-sdk-go-v2 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=f657d3dd-c092-df7b-ec07-67a765763f09 aws.region=us-east-1 http.url=https://ec2.us-east-1.amazonaws.com/ tf_data_source_type=aws_ami timestamp=2026-09-20T12:40:17.945Z
+2026-09-20T12:40:18.984Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: HTTP Response Received: tf_req_id=f657d3dd-c092-df7b-ec07-67a765763f09 aws.region=us-east-1
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <DescribeImagesResponse xmlns="http://ec2.amazonaws.com/doc/2016-11-15/">
+  |     <requestId>e8409efe-c9af-4581-a313-707858d16d42</requestId>
+  |     <imagesSet>
+  |         <item>
+  |             <imageId>ami-03ceeebf93c41fdae</imageId>
+  |             <imageLocation>amazon/ubuntu/images/hvm-ssd-gp3/ubuntu-resolute-26.04-amd64-server-20260819</imageLocation>
+  |             <imageState>available</imageState>
+  |             <imageOwnerId>099720109477</imageOwnerId>
+  |             <creationDate>2026-08-19T14:41:44.000Z</creationDate>
+  |             <isPublic>true</isPublic>
+  |             <architecture>x86_64</architecture>
+  |             <imageType>machine</imageType>
+  |             <sriovNetSupport>simple</sriovNetSupport>
+  |             <imageOwnerAlias>amazon</imageOwnerAlias>
+  |             <name>ubuntu/images/hvm-ssd-gp3/ubuntu-resolute-26.04-amd64-server-20260819</name>
+  |             <description>Canonical, Ubuntu, 26.04, amd64 resolute image</description>
+  |             <rootDeviceType>ebs</rootDeviceType>
+  |             <rootDeviceName>/dev/sda1</rootDeviceName>
+  |             <blockDeviceMapping>
+  |                 <item>
+  |                     <deviceName>/dev/sda1</deviceName>
+  |                     <ebs>
+  |                         <snapshotId>snap-03618046135bf0f25</snapshotId>
+  |                         <volumeSize>8</volumeSize>
+  |                         <deleteOnTermination>true</deleteOnTermination>
+  |                         <volumeType>gp3</volumeType>
+  |                         <encrypted>false</encrypted>
+  |                     </ebs>
+  |                 </item>
+  |                 <item>
+  |                     <deviceName>/dev/sdb</deviceName>
+  |                     <virtualName>ephemeral0</virtualName>
+  |                 </item>
+  |                 <item>
+  |                     <deviceName>/dev/sdc</deviceName>
+  |                     <virtualName>ephemeral1</virtualName>
+  |                 </item>
+  |             </blockDeviceMapping>
+  |             <virtualizationType>hvm</virtualizationType>
+  |             <hypervisor>xen</hypervisor>
+  |             <enaSupport>true</enaSupport>
+  |             <platformDetails>Linux/UNIX</platformDetails>
+  |             <usageOperation>RunInstances</usageOperation>
+  |             <bootMode>uefi-preferred</bootMode>
+  |             <imdsSupport>v2.0</imdsSupport>
+  |             <deprecationTime>2028-08-19T14:41:44.000Z</deprecationTime>
+  |             <freeTierEligible>true</freeTierEligible>
+  |             <publicSsmParameterName>aws/service/canonical/ubuntu/server/resolute/stable/current/amd64/hvm/ebs-gp3/ami-id</publicSsmParameterName>
+  |         </item>
+  |         <item>
+  |             <imageId>ami-02ebdb11bae1b2486</imageId>
+  |             <imageLocation>amazon/ubuntu/images/hvm-ssd-gp3/ubuntu-resolute-26.04-amd64-server-20260806</imageLocation>
+  |             <imageState>available</imageState>
+  |             <imageOwnerId>099720109477</imageOwnerId>
+  |             <creationDate>2026-08-06T07:34:34.000Z</creationDate>
+  |             <isPublic>true</isPublic>
+  |             <architecture>x86_64</architecture>
+  |             <imageType>machine</imageType>
+  |             <sriovNetSupport>simple</sriovNetSupport>
+  |             <imageOwnerAlias>amazon</imageOwnerAlias>
+  |             <name>ubuntu/images/hvm-ssd-gp3/ubuntu-resolute-26.04-amd64-server-20260806</name>
+  |             <description>Canonical, Ubuntu, 26.04, amd64 resolute image</description>
+  |             <rootDeviceType>ebs</rootDeviceType>
+  |             <rootDeviceName>/dev/sda1</rootDeviceName>
+  |             <blockDeviceMapping>
+  |                 <item>
+  |                     <deviceName>/dev/sda1</deviceName>
+  |                     <ebs>
+  |                         <snapshotId>snap-0a17bd2d5272a55f3</snapshotId>
+  |                         <volumeSize>8</volumeSize>
+  |                         <deleteOnTermination>true</deleteOnTermination>
+  |                         <volumeType>gp3</volumeType>
+  |                         <encrypted>false</encrypted>
+  |                     </ebs>
+  |                 </item>
+  |                 <item>
+  |                     <deviceName>/dev/sdb</deviceName>
+  |                     <virtualName>ephemeral0</virtualName>
+  |                 </item>
+  |                 <item>
+  |                     <deviceName>/dev/sdc</deviceName>
+  | [truncated...]
+   http.response.header.content_type=text/xml;charset=UTF-8 http.response.header.date="Sun, 20 Sep 2026 12:40:19 GMT" tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.duration=1037 http.response.header.cache_control="no-cache, no-store" http.response.header.server=AmazonEC2 tf_data_source_type=aws_ami tf_mux_provider="*schema.GRPCProviderServer" @module=aws http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" http.status_code=200 rpc.method=EC2/DescribeImages tf_rpc=ReadDataSource http.response.header.vary=accept-encoding http.response.header.x_amzn_requestid=e8409efe-c9af-4581-a313-707858d16d42 rpc.system.name=aws-api timestamp=2026-09-20T12:40:18.984Z
+2026-09-20T12:40:19.015Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: HTTP Request Sent: http.user_agent="APN/1.0 HashiCorp/1.0 Terraform/1.16.3 (+https://www.terraform.io) terraform-provider-aws/6.65.0 (+https://registry.terraform.io/providers/hashicorp/aws) aws-sdk-go-v2/1.47.0 ua/2.1 os/linux lang/go#1.26.6 md/GOOS#linux md/GOARCH#amd64 api/ec2#1.332.0 m/n" tf_aws.sdk=aws-sdk-go-v2 tf_aws.signing_region="" tf_req_id=f657d3dd-c092-df7b-ec07-67a765763f09 @module=aws tf_data_source_type=aws_ami tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ReadDataSource @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 aws.region=us-east-1
+  http.request.body=
+  | Action=GetInstanceUefiData&InstanceId=ami-09b09d2491cd88154&Version=2016-11-15
+   http.request_content_length=78 http.url=https://ec2.us-east-1.amazonaws.com/ rpc.method=EC2/GetInstanceUefiData rpc.system.name=aws-api http.request.header.authorization="AWS4-HMAC-SHA256 Credential=AKIA************HAG5/20260920/us-east-1/ec2/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=*****" http.request.header.content_type=application/x-www-form-urlencoded http.request.header.x_amz_date=20260920T124019Z net.peer.name=ec2.us-east-1.amazonaws.com http.method=POST http.request.header.amz_sdk_invocation_id=091e473e-e4e2-45c1-9b8f-75ed6ecb0900 http.request.header.amz_sdk_request="attempt=1; max=25" timestamp=2026-09-20T12:40:19.015Z
+2026-09-20T12:40:19.268Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: HTTP Response Received: http.response.header.vary=accept-encoding http.response.header.x_amzn_requestid=1c7c9995-d840-40e2-a367-709eda6a8e01 http.status_code=400 aws.region=us-east-1 http.duration=251 rpc.method=EC2/GetInstanceUefiData tf_aws.signing_region="" tf_rpc=ReadDataSource http.response.header.strict_transport_security="max-age=31536000; includeSubDomains" tf_aws.sdk=aws-sdk-go-v2 tf_data_source_type=aws_ami @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 http.response.header.content_type=text/xml;charset=UTF-8 rpc.system.name=aws-api tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=f657d3dd-c092-df7b-ec07-67a765763f09 @module=aws
+  http.response.body=
+  | <?xml version="1.0" encoding="UTF-8"?>
+  | <Response><Errors><Error><Code>InvalidInstanceID.Malformed</Code><Message>The instance ID 'ami-09b09d2491cd88154' is malformed</Message></Error></Errors><RequestID>1c7c9995-d840-40e2-a367-709eda6a8e01</RequestID></Response>
+   http.response.header.cache_control="no-cache, no-store" http.response.header.date="Sun, 20 Sep 2026 12:40:19 GMT" http.response.header.server=AmazonEC2 timestamp=2026-09-20T12:40:19.267Z
+2026-09-20T12:40:19.270Z [DEBUG] provider.terraform-provider-aws_v6.65.0_x5: request failed with unretryable error https response error StatusCode: 400, RequestID: 1c7c9995-d840-40e2-a367-709eda6a8e01, api error InvalidInstanceID.Malformed: The instance ID 'ami-09b09d2491cd88154' is malformed: @module=aws aws.region=us-east-1 rpc.method=EC2/GetInstanceUefiData rpc.system.name=aws-api tf_rpc=ReadDataSource @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.73/logging/tf_logger.go:45 tf_aws.sdk=aws-sdk-go-v2 tf_data_source_type=aws_ami tf_mux_provider="*schema.GRPCProviderServer" tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=f657d3dd-c092-df7b-ec07-67a765763f09 timestamp=2026-09-20T12:40:19.269Z
+2026-09-20T12:40:19.272Z [DEBUG] Resource instance state not found for node "aws_instance.ubuntu_instance", instance aws_instance.ubuntu_instance
+2026-09-20T12:40:19.273Z [DEBUG] refresh: aws_instance.ubuntu_instance: no state, so not refreshing
+2026-09-20T12:40:19.303Z [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_instance.ubuntu_instance, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .user_data_replace_on_change: planned value cty.False for a non-computed attribute
+      - .force_destroy: planned value cty.False for a non-computed attribute
+      - .source_dest_check: planned value cty.True for a non-computed attribute
+      - .get_password_data: planned value cty.False for a non-computed attribute
+      - .root_block_device: planned unknown value for non-computed block
+      - .secondary_network_interface: planned unknown value for non-computed block
+      - .capacity_reservation_specification: planned unknown value for non-computed block
+      - .enclave_options: planned unknown value for non-computed block
+      - .ephemeral_block_device: planned unknown value for non-computed block
+      - .instance_market_options: planned unknown value for non-computed block
+      - .metadata_options: planned unknown value for non-computed block
+      - .network_interface: planned unknown value for non-computed block
+      - .private_dns_name_options: planned unknown value for non-computed block
+      - .cpu_options: planned unknown value for non-computed block
+      - .ebs_block_device: planned unknown value for non-computed block
+      - .maintenance_options: planned unknown value for non-computed block
+      - .primary_network_interface: planned unknown value for non-computed block
+2026-09-20T12:40:19.304Z [DEBUG] provider.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = error reading from server: EOF"
+2026-09-20T12:40:19.332Z [INFO]  provider: plugin process exited: plugin=.terraform/providers/registry.terraform.io/hashicorp/aws/6.65.0/linux_amd64/terraform-provider-aws_v6.65.0_x5 id=205093
+2026-09-20T12:40:19.332Z [DEBUG] provider: plugin exited
+2026-09-20T12:40:19.333Z [DEBUG] building apply graph to check for errors
+2026-09-20T12:40:19.333Z [DEBUG] Resource state not found for node "aws_instance.ubuntu_instance", instance aws_instance.ubuntu_instance
+2026-09-20T12:40:19.333Z [DEBUG] ProviderTransformer: "data.aws_ami.ami_details (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-09-20T12:40:19.333Z [DEBUG] ProviderTransformer: "aws_instance.ubuntu_instance" (*terraform.NodeApplyableResourceInstance) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-09-20T12:40:19.334Z [DEBUG] ProviderTransformer: "aws_instance.ubuntu_instance (expand)" (*terraform.nodeExpandApplyableResource) needs provider["registry.terraform.io/hashicorp/aws"]
+2026-09-20T12:40:19.334Z [DEBUG] ReferenceTransformer: "aws_instance.ubuntu_instance" references: [data.aws_ami.ami_details (expand)]
+2026-09-20T12:40:19.334Z [DEBUG] ReferenceTransformer: "aws_instance.ubuntu_instance" references: data.aws_ami.ami_details (expand)
+2026-09-20T12:40:19.334Z [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/hashicorp/aws\"]" references: []
+2026-09-20T12:40:19.335Z [DEBUG] ReferenceTransformer: "aws_instance.ubuntu_instance (expand)" references: [data.aws_ami.ami_details (expand)]
+2026-09-20T12:40:19.335Z [DEBUG] ReferenceTransformer: "aws_instance.ubuntu_instance (expand)" references: data.aws_ami.ami_details (expand)
+2026-09-20T12:40:19.335Z [DEBUG] ReferenceTransformer: "data.aws_ami.ami_details (expand)" references: []
+2026-09-20T12:40:19.335Z [INFO]  backend/local: plan operation completed
