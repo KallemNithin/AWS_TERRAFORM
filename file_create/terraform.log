@@ -1,0 +1,48 @@
+2026-09-20T13:46:47.797Z [INFO]  Terraform version: 1.16.3
+2026-09-20T13:46:47.798Z [DEBUG] using github.com/hashicorp/go-tfe v1.110.0
+2026-09-20T13:46:47.799Z [DEBUG] using github.com/hashicorp/hcl/v2 v2.24.0
+2026-09-20T13:46:47.799Z [DEBUG] using github.com/hashicorp/terraform-svchost v0.2.1
+2026-09-20T13:46:47.799Z [DEBUG] using github.com/zclconf/go-cty v1.18.1
+2026-09-20T13:46:47.799Z [INFO]  Go runtime version: go1.26.8
+2026-09-20T13:46:47.799Z [INFO]  CLI args: []string{"/snap/terraform/938/terraform", "fmt"}
+2026-09-20T13:46:47.800Z [DEBUG] Attempting to open CLI config file: /home/nithin_kallem/.terraformrc
+2026-09-20T13:46:47.800Z [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2026-09-20T13:46:47.802Z [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2026-09-20T13:46:47.802Z [DEBUG] ignoring non-existing provider search directory /home/nithin_kallem/.terraform.d/plugins
+2026-09-20T13:46:47.802Z [DEBUG] ignoring non-existing provider search directory /home/nithin_kallem/.local/share/terraform/plugins
+2026-09-20T13:46:47.802Z [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2026-09-20T13:46:47.803Z [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2026-09-20T13:46:47.803Z [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2026-09-20T13:46:47.804Z [INFO]  CLI command args: []string{"fmt"}
+2026-09-20T13:47:52.963Z [INFO]  Terraform version: 1.16.3
+2026-09-20T13:47:52.964Z [DEBUG] using github.com/hashicorp/go-tfe v1.110.0
+2026-09-20T13:47:52.965Z [DEBUG] using github.com/hashicorp/hcl/v2 v2.24.0
+2026-09-20T13:47:52.965Z [DEBUG] using github.com/hashicorp/terraform-svchost v0.2.1
+2026-09-20T13:47:52.965Z [DEBUG] using github.com/zclconf/go-cty v1.18.1
+2026-09-20T13:47:52.965Z [INFO]  Go runtime version: go1.26.8
+2026-09-20T13:47:52.965Z [INFO]  CLI args: []string{"/snap/terraform/938/terraform", "fmt", "-diff"}
+2026-09-20T13:47:52.966Z [DEBUG] Attempting to open CLI config file: /home/nithin_kallem/.terraformrc
+2026-09-20T13:47:52.966Z [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2026-09-20T13:47:52.967Z [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2026-09-20T13:47:52.967Z [DEBUG] ignoring non-existing provider search directory /home/nithin_kallem/.terraform.d/plugins
+2026-09-20T13:47:52.967Z [DEBUG] ignoring non-existing provider search directory /home/nithin_kallem/.local/share/terraform/plugins
+2026-09-20T13:47:52.967Z [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2026-09-20T13:47:52.967Z [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2026-09-20T13:47:52.968Z [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2026-09-20T13:47:52.969Z [INFO]  CLI command args: []string{"fmt", "-diff"}
+2026-09-20T13:48:22.089Z [INFO]  Terraform version: 1.16.3
+2026-09-20T13:48:22.090Z [DEBUG] using github.com/hashicorp/go-tfe v1.110.0
+2026-09-20T13:48:22.090Z [DEBUG] using github.com/hashicorp/hcl/v2 v2.24.0
+2026-09-20T13:48:22.090Z [DEBUG] using github.com/hashicorp/terraform-svchost v0.2.1
+2026-09-20T13:48:22.090Z [DEBUG] using github.com/zclconf/go-cty v1.18.1
+2026-09-20T13:48:22.091Z [INFO]  Go runtime version: go1.26.8
+2026-09-20T13:48:22.091Z [INFO]  CLI args: []string{"/snap/terraform/938/terraform", "fmt", "-diff"}
+2026-09-20T13:48:22.091Z [DEBUG] Attempting to open CLI config file: /home/nithin_kallem/.terraformrc
+2026-09-20T13:48:22.091Z [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2026-09-20T13:48:22.092Z [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2026-09-20T13:48:22.092Z [DEBUG] ignoring non-existing provider search directory /home/nithin_kallem/.terraform.d/plugins
+2026-09-20T13:48:22.092Z [DEBUG] ignoring non-existing provider search directory /home/nithin_kallem/.local/share/terraform/plugins
+2026-09-20T13:48:22.092Z [DEBUG] ignoring non-existing provider search directory /usr/local/share/terraform/plugins
+2026-09-20T13:48:22.093Z [DEBUG] ignoring non-existing provider search directory /usr/share/terraform/plugins
+2026-09-20T13:48:22.093Z [DEBUG] ignoring non-existing provider search directory /var/lib/snapd/desktop/terraform/plugins
+2026-09-20T13:48:22.094Z [INFO]  CLI command args: []string{"fmt", "-diff"}
