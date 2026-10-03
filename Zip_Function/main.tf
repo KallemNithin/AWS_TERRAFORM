@@ -19,6 +19,7 @@ output "user_arn" {
   value = aws_iam_user.User_Onboarding[*].arn
 }
 
+#ZIPMAP Function  appending the user name and user arn in a single output
 output "combination" {
     value = zipmap(aws_iam_user.User_Onboarding[*].name, aws_iam_user.User_Onboarding[*].arn)
 }
