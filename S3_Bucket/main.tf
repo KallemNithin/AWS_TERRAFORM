@@ -21,3 +21,14 @@ resource "aws_s3_bucket" "tf_test_kvnith_bucket" {
     Environment = "Dev"
   }
 }
+
+
+terraform {
+  backend "s3" {
+    bucket       = "nithin-terraform-remote-state-2026"
+    key          = "my-project/terraform.tfstate"
+    region       = "us-east-1"
+    encrypt      = true
+    use_lockfile = true
+  }
+}
